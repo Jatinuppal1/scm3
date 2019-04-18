@@ -12,8 +12,19 @@ class Area()
 	float sqr();
 	float crcl();
 };
+float Area::rect()
+{
+	return l*b;
+}
+float Area::sqr()
+{
+	return a*a;
+}
 int main()
 {
+	Area A;
+	A.rect();
+	A.sqr();
 	return 0;
 }
 

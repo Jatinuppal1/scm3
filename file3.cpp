@@ -8,12 +8,12 @@ class Salary
 	{
 		cout<<"_____Salary Calculation_____";
 	}
-	float salcal()
+	void salcal()
 	{
 		 d = ( 40.0/100.0 )*( b_sal );
 		 r = ( 20.0 /100.0 *( b_sal );
 	         g_sal = b_sal + d + r ;
-		 return g_sal; 
+		 cout<<"\nGross Salary is "<<g_sal;
 	}
 };
 int main()
@@ -21,5 +21,6 @@ int main()
 	Salary S1;
 	cout  <<  "\nEnter your Basic Salary - ";
 	cin  >>  S1.b_sal;
+	S1.salcal();
 	return 0;
 }
